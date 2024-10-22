@@ -44,29 +44,7 @@
          <audio id="audio" src="audio/checked.mp3"></audio>
     </main>
     <script src="api.js"></script>
-    <script>
-      var btnCopy = document.getElementById("copyBtn");
-      var audio = document.getElementById("audio");
-      // Permet de préfixer les navigateurs
-      navigator.vibrate =
-        navigator.vibrate ||
-        navigator.webkitVibrate ||
-        navigator.mozVibrate ||
-        navigator.msVibrate;
-      function play() {
-        var audio = document.getElementById("audio");
-        audio.play();
-      }
-      function copy() {
-        navigator.clipboard.writeText("jealife.agency@gmail.com");
-        btnCopy.innerText = "Copied!!";
-        // Si l'API vibrate est supportée, on fait vibrer le téléphone 1/2 seconde
-        if (navigator.vibrate) {
-          navigator.vibrate(500);
-        }
-        play();
-      }
-    </script>
+    
 </body>
 
 </html>
