@@ -5,12 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poké API</title>
+    <meta property="og:url" content="https://www.jealife.agency/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Poké API">
+    <meta property="og:description" content="All the Pokémon data you'll ever need in one place,
+        easily accessible through a modern free open-source RESTful API.">
+        <meta property="og:image" content="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png">
+
+    <link rel="icon" href="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png">
+    <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-blue-50">
     <main class="min-h-svh grid place-content-center">
-        <div id="wrapper" class="bg-white rounded-md shadow-2xl shadow-black/15 py-4 px-3 h-72 w-96 flex flex-col justify-center gap-4 items-center">
+        <div id="wrapper"
+            class="bg-white rounded-md shadow-2xl shadow-black/15 py-4 px-3 h-72 w-96 flex flex-col justify-center gap-4 items-center">
             <div id="wrapper__image-Wrapper">
                 <img class="object-cover w-full" id="image" src="" alt="">
             </div>
@@ -19,14 +29,16 @@
                     <span class="text-gray-600 text-sm ">ID : </span>
                     <span id="number" class="text-gray-600 text-sm "></span>
                 </div>
-                <div >
+                <div>
                     <h2 id="name" class="text-xl font-bold capitalize text-gray-800">
 
                     </h2>
                 </div>
             </div>
             <div id="wrapper-button">
-                <button id="button" class="px-3 py-2 rounded-md bg-blue-700 text-blue-50 hover:bg-blue-500 duration-300 cursor-pointer outline-2 focus:outline focus:bg-blue-400 focus:outline-blue-300 " type="button">Get other pokemon !</button>
+                <button id="button"
+                    class="px-3 py-2 rounded-md bg-blue-700 text-blue-50 hover:bg-blue-500 duration-300 cursor-pointer outline-2 focus:outline focus:bg-blue-400 focus:outline-blue-300 "
+                    type="button">Get other pokemon !</button>
             </div>
         </div>
     </main>
