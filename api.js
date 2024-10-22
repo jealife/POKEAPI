@@ -13,16 +13,6 @@ function play() {
     var audio = document.getElementById("audio");
     audio.play();
 }
-function copy() {
-    navigator.clipboard.writeText("jealife.agency@gmail.com");
-    btnCopy.innerText = "Copied!!";
-        // Si l'API vibrate est supportée, on fait vibrer le téléphone 1/2 seconde
-        if (navigator.vibrate) {
-
-        navigator.vibrate(500);
-}
-play();
-}
 
 button.addEventListener("click",  changePokemon  = async ()=>{
     let RandomNumber= Math.ceil(Math.random()*150)+1;
