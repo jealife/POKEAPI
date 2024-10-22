@@ -35,6 +35,7 @@ button.addEventListener("click",  changePokemon  = async ()=>{
     image.src=response.sprites.front_default;
     PokeNumber.textContent=response.id;
     PokeName.textContent=response.name;
+    audio.src=response.cries.legacy;
     play();
 })
 changePokemon();
