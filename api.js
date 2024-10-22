@@ -15,3 +15,4 @@ button.addEventListener("click",  changePokemon  = async ()=>{
     PokeNumber.textContent=response.id;
     PokeName.textContent=response.name;
 })
+changePokemon();
