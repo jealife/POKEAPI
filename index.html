@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poké API</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-blue-50">
+    <main class="min-h-svh grid place-content-center">
+        <div id="wrapper" class="bg-white rounded-md shadow-2xl shadow-black/15 py-4 px-3 h-72 w-96 flex flex-col justify-center gap-4 items-center">
+            <div id="wrapper__image-Wrapper">
+                <img class="object-cover w-full" id="image" src="" alt="">
+            </div>
+            <div id="header" class="text-center">
+                <div>
+                    <span class="text-gray-600 text-sm ">ID : </span>
+                    <span id="number" class="text-gray-600 text-sm "></span>
+                </div>
+                <div >
+                    <h2 id="name" class="text-xl font-bold capitalize text-gray-800">
+
+                    </h2>
+                </div>
+            </div>
+            <div id="wrapper-button">
+                <button id="button" class="px-3 py-2 rounded-md bg-blue-700 text-blue-50 hover:bg-blue-500 duration-300 cursor-pointer outline-2 focus:outline focus:bg-blue-400 focus:outline-blue-300 " type="button">Get other pokemon !</button>
+            </div>
+        </div>
+    </main>
+    <script src="api.js"></script>
+</body>
+
+</html>
